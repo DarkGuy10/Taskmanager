@@ -1,0 +1,31 @@
+.stickyHeader {
+	position: sticky;
+	height: 85px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+}
+
+.layerContainer {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.headerText {
+	color: var(--text-secondary);
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0 15px;
+	cursor: pointer;
+	user-select: none;
+	transition: all 0.16s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+	&:hover {
+		color: var(--text-primary);
+	}
+}
+
+.active {
+	color: var(--text-primary) !important;
+}

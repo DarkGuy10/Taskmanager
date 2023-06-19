@@ -1,9 +1,9 @@
 import styles from '@/styles/home.module.scss'
 
-export default function Home() {
+export default function Login() {
 	return (
 		<main className={styles.comingSoon}>
-			Landing page | <span>in construction </span>
+			Login page | <span>in construction </span>
 		</main>
 	)
 }
