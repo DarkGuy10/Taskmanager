@@ -18,10 +18,11 @@ text-secondary: #6b6b71
 
 Helvetica
 
-
 ### Reference
 
 https://dribbble.com/shots/17876949--Task-Management-Dashboard-Dark-Mode-Version
+
+Assets: https://www.svgrepo.com
 
 ### Hosted routes structure
 

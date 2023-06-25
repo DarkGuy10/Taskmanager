@@ -28,8 +28,8 @@ export default function UserSection({
 				<div className={styles.username}>@{username}</div>
 			</div>
 			<Image
-				src={'/svg/settings-cog.svg'}
-				alt="settings-cog"
+				src={'/svg/settings.svg'}
+				alt="settings-icon"
 				height={24}
 				width={24}
 				className={'icon'}
