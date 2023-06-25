@@ -9,8 +9,8 @@ export default function SearchBar() {
 				<Image
 					src={'/svg/search.svg'}
 					alt="search-icon"
-					height={28}
-					width={28}
+					height={24}
+					width={24}
 					className={styles.searchIcon}
 				/>
 			</div>
