@@ -13,13 +13,13 @@
 		transform: translate(0, -3px);
 	}
 
-	&[data-type='backlog'] {
+	&[data-status='backlog'] {
 		background-color: var(--status-backlog);
 	}
-	&[data-type='in-progress'] {
+	&[data-status='in-progress'] {
 		background-color: var(--status-in-progress);
 	}
-	&[data-type='completed'] {
+	&[data-status='completed'] {
 		background-color: var(--status-completed);
 	}
 }
