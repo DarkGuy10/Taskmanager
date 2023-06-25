@@ -1,0 +1,53 @@
+.wrapper {
+	height: auto;
+	width: 130px;
+	border-radius: 15px;
+	padding: 18px 15px;
+	margin-right: 20px;
+	user-select: none;
+	cursor: pointer;
+	transition: all 0.16s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+	&:hover {
+		box-shadow: 0 3px 10px 2px rgba($color: #000000, $alpha: 0.4);
+		transform: translate(0, -3px);
+	}
+
+	&[data-type='backlog'] {
+		background-color: var(--status-backlog);
+	}
+	&[data-type='in-progress'] {
+		background-color: var(--status-in-progress);
+	}
+	&[data-type='completed'] {
+		background-color: var(--status-completed);
+	}
+}
+
+.label {
+	color: var(--text-primary);
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.value {
+	margin-top: 10px;
+	font-size: 35px;
+	color: var(--text-primary);
+
+	&::before {
+		content: ' ';
+		display: inline-block;
+		width: 2.5px;
+		height: 25px;
+		background-color: var(--text-primary);
+		margin-right: 15px;
+	}
+
+	&::after {
+		content: 'Task';
+		font-size: 12px;
+		color: var(--text-primary);
+		margin-left: 10px;
+	}
+}

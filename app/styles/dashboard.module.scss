@@ -16,4 +16,19 @@
 .content {
 	flex-grow: 1;
 	overflow: hidden auto;
+	display: flex;
+	align-items: stretch;
+}
+
+.main {
+	flex-grow: 1;
+	overflow: hidden auto;
+	padding: 0 15px;
+}
+
+.aside {
+	flex-shrink: 0;
+	width: 300px;
+	margin: 0 30px;
+	overflow: hidden auto;
 }
