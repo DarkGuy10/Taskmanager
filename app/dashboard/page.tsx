@@ -4,6 +4,11 @@ import StickyHeader from '@/components/StickyHeader/StickyHeader'
 import styles from '@/styles/dashboard.module.scss'
 import Image from 'next/image'
 
+export const metadata = {
+	title: 'Taskmanager | Dashboard',
+	description: 'Manager all your tasks here',
+}
+
 export default function Dashboard() {
 	return (
 		<div className={styles.wrapper}>
