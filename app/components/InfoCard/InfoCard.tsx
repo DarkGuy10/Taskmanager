@@ -1,24 +1,16 @@
+import { Status } from '@/typings'
+import { labelText } from '@/utils'
 import styles from './InfoCard.module.scss'
 
 interface InfoCardProps {
-	type: 'backlog' | 'in-progress' | 'completed'
+	status: Status
 	value: number
 }
 
-export default function InfoCard({ type, value }: InfoCardProps) {
-	const labelText = () => {
-		switch (type) {
-			case 'backlog':
-				return 'Backlog'
-			case 'in-progress':
-				return 'In Progress'
-			case 'completed':
-				return 'Completed'
-		}
-	}
+export default function InfoCard({ status, value }: InfoCardProps) {
 	return (
-		<div className={styles.wrapper} data-type={type}>
-			<div className={styles.label}>{labelText()}</div>
+		<div className={styles.wrapper} data-status={status}>
+			<div className={styles.label}>{labelText(status)}</div>
 			<div className={styles.value}>{value}</div>
 		</div>
 	)
