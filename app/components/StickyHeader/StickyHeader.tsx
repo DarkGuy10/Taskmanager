@@ -4,6 +4,7 @@ import styles from './StickyHeader.module.scss'
 import Image from 'next/image'
 import NotificationBell from '@/components/NotificationBell/NotificationBell'
 import SearchBar from '@/components/SearchBar/SearchBar'
+import { mockUser } from '@/utils'
 
 export default function StickyHeader() {
 	return (
@@ -27,11 +28,7 @@ export default function StickyHeader() {
 					style={{ marginLeft: '10px' }}
 				/>
 			</Button>
-			<UserSection
-				displayName="Inumaki Toge"
-				username="onigiri"
-				avatarURL="https://avatars.githubusercontent.com/u/62807269?v=4"
-			/>
+			<UserSection user={mockUser()} />
 		</div>
 	)
 }
