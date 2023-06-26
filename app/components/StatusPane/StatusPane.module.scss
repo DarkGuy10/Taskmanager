@@ -1,0 +1,65 @@
+.statusPane {
+	flex: 1 1;
+	margin: 0 10px;
+	display: flex;
+	flex-direction: column;
+
+	&[data-status='backlog'] {
+		--accent-color: var(--status-backlog);
+	}
+	&[data-status='in-progress'] {
+		--accent-color: var(--status-in-progress);
+	}
+	&[data-status='completed'] {
+		--accent-color: var(--status-completed);
+	}
+}
+
+.header {
+	height: 40px;
+	width: fit-content;
+	padding: 0 15px;
+	color: var(--accent-color);
+	font-size: 12px;
+	font-weight: 600;
+	background-color: var(--background-primary);
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	user-select: none;
+
+	.counter {
+		margin-left: 10px;
+		color: var(--text-primary);
+		background-color: var(--accent-color);
+		height: 20px;
+		width: 20px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.list {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.nothingHere {
+	align-self: center;
+	margin: auto 0;
+	color: var(--text-primary);
+	opacity: 0.25;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	user-select: none;
+
+	span {
+		margin-top: 15px;
+	}
+}

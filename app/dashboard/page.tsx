@@ -1,8 +1,10 @@
 import Information from '@/components/Information/Information'
 import SideNav from '@/components/SideNav/SideNav'
+import StatusPane from '@/components/StatusPane/StatusPane'
 import StickyHeader from '@/components/StickyHeader/StickyHeader'
 import styles from '@/styles/dashboard.module.scss'
 import Image from 'next/image'
+import { mockTasks } from '@/utils'
 
 export const metadata = {
 	title: 'Taskmanager | Dashboard',
@@ -33,45 +35,14 @@ export default function Dashboard() {
 								Managing your tasks is easy with Taskmanager
 							</div>
 							<div className={styles.taskContainer}>
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
+								<StatusPane
+									status="backlog"
+									tasks={mockTasks('backlog').filter(
+										task => (task.status = 'backlog')
+									)}
+								/>
+								<StatusPane status="in-progress" tasks={[]} />
+								<StatusPane status="completed" tasks={[]} />
 							</div>
 						</div>
 					</main>
