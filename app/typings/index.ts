@@ -6,6 +6,7 @@ export interface Task {
 	title: string
 	description?: string
 	creater: User
+	labels: string[]
 }
 
 export interface User {
