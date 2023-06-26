@@ -15,13 +15,15 @@ export default function UserSection({ user }: { user: User }) {
 				<div className={styles.displayName}>{displayName}</div>
 				<div className={styles.username}>@{username}</div>
 			</div>
-			<Image
-				src={'/svg/settings.svg'}
-				alt="settings-icon"
-				height={24}
-				width={24}
-				className={'icon'}
-			/>
+			<div className={styles.iconContainer}>
+				<Image
+					src={'/svg/settings.svg'}
+					alt="settings-icon"
+					height={24}
+					width={24}
+					className={`${styles.settingsIcon}`}
+				/>
+			</div>
 		</div>
 	)
 }
