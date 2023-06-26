@@ -1,4 +1,4 @@
-import { Status } from '@/typings'
+import { Status, Task, User } from '@/typings'
 
 export const labelText = (type: Status) => {
 	switch (type) {
@@ -10,3 +10,31 @@ export const labelText = (type: Status) => {
 			return 'Completed'
 	}
 }
+
+export const mockUser = (): User => {
+	return {
+		id: 'maw3o4jva9wo3n4acwer',
+		displayName: 'Inumaki Toge',
+		username: 'onigiri',
+		avatarURL: 'https://avatars.githubusercontent.com/u/62807269?v=4',
+	}
+}
+
+export const mockTasks = (status: Status): Task[] => [
+	{
+		id: 'ian3va0ps34vaw34vawef',
+		title: 'Photo Profile Instagram',
+		description: 'I want to make a cool profile picture for instagram',
+		creater: mockUser(),
+		status: status,
+		labels: ['Instagram'],
+	},
+	{
+		id: '34aiova93bna4vaseiraw',
+		title: 'Onigiri',
+		description: 'Okaka, shake, tsuna, takana',
+		creater: mockUser(),
+		status: 'backlog',
+		labels: ['Onigiri'],
+	},
+]
