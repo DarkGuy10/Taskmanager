@@ -21,7 +21,12 @@ export default function Login() {
 			</div>
 
 			<div className={styles.fieldWrapper}>
-				<InputField type="password" iconUrl="/svg/key.svg" label="Password" />{' '}
+				<InputField
+					type="password"
+					iconUrl="/svg/key.svg"
+					label="Password"
+					placeholder="••••••••••••"
+				/>
 			</div>
 
 			<div className={styles.forgotPassword}>Forgot password?</div>
