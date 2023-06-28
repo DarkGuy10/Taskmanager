@@ -1,23 +1,17 @@
 'use client'
-import Image from 'next/image'
+import { useState } from 'react'
 import styles from './SearchBar.module.scss'
+import InputField from '@/components/InputField/InputField'
 
 export default function SearchBar() {
+	const [value, setValue] = useState('')
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.iconContainer}>
-				<Image
-					src={'/svg/search.svg'}
-					alt="search-icon"
-					height={24}
-					width={24}
-					className={styles.searchIcon}
-				/>
-			</div>
-			<input
+			<InputField
 				type="text"
-				className={styles.searchField}
+				iconUrl="/svg/search.svg"
 				placeholder="Search project, name..."
+				setState={setValue}
 			/>
 		</div>
 	)

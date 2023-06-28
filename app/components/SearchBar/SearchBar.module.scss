@@ -1,32 +1,4 @@
 .wrapper {
 	margin: 0 auto;
 	width: 350px;
-	display: flex;
-	align-items: stretch;
-	height: 50px;
-}
-
-.iconContainer {
-	background-color: var(--background-secondary);
-	border-radius: 20px 0 0 20px;
-	width: auto;
-	display: flex;
-	align-items: center;
-	flex-shrink: 0;
-	padding-left: 15px;
-}
-
-.searchIcon {
-	opacity: 0.3;
-}
-
-.searchField {
-	background-color: var(--background-secondary);
-	color: var(--text-secondary);
-	outline: 0;
-	border: 0;
-	font-size: 14px;
-	flex-grow: 1;
-	padding: 0 15px;
-	border-radius: 0 20px 20px 0;
 }
