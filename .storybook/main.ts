@@ -20,8 +20,11 @@ const config: StorybookConfig = {
 		config.resolve.alias = {
 			...config.resolve.alias,
 			'@/components': path.resolve(__dirname, '../app/components'),
+			'@/styles': path.resolve(__dirname, '../app/styles'),
+			'@/lib/*': path.resolve(__dirname, '../lib'),
 		}
 		return config
 	},
+	staticDirs: ['../public'],
 }
 export default config
