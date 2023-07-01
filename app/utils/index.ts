@@ -38,3 +38,15 @@ export const mockTasks = (status: Status): Task[] => [
 		labels: ['Onigiri'],
 	},
 ]
+
+export const getBaseUrl = () => {
+	let url =
+		process?.env?.NEXT_PUBLIC_SITE_URL ??
+		process?.env?.NEXT_PUBLIC_VERCEL_URL ??
+		'https://localhost:3000'
+	url = url.includes('http') ? url : `https://${url}`
+	url = url.endsWith('/') ? url : `${url}/`
+	return url
+}
+
+export const noAuthPaths = ['/', '/login', '/register']
