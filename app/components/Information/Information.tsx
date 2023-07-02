@@ -1,4 +1,4 @@
-import InfoCard from '@/components/InfoCard/InfoCard'
+import { InfoCard } from '@/components'
 import styles from './Information.module.scss'
 
 export default function Information() {

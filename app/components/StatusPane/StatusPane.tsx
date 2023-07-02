@@ -1,7 +1,7 @@
 import { Status, Task } from '@/typings'
 import { labelText } from '@/utils'
 import styles from './StatusPane.module.scss'
-import TaskListItem from '@/components/TaskListItem/TaskListItem'
+import { TaskListItem } from '@/components'
 import Image from 'next/image'
 
 interface StatusPaneProps {

@@ -1,7 +1,4 @@
-import Information from '@/components/Information/Information'
-import SideNav from '@/components/SideNav/SideNav'
-import StatusPane from '@/components/StatusPane/StatusPane'
-import StickyHeader from '@/components/StickyHeader/StickyHeader'
+import { Information, SideNav, StatusPane, StickyHeader } from '@/components'
 import styles from '@/styles/dashboard.module.scss'
 import Image from 'next/image'
 import { mockTasks } from '@/utils'

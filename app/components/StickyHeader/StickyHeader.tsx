@@ -1,9 +1,6 @@
-import UserSection from '@/components/UserSection/UserSection'
-import Button from '@/components/Button/Button'
 import styles from './StickyHeader.module.scss'
 import Image from 'next/image'
-import NotificationBell from '@/components/NotificationBell/NotificationBell'
-import SearchBar from '@/components/SearchBar/SearchBar'
+import { NotificationBell, Button, UserSection, SearchBar } from '@/components'
 import { mockUser } from '@/utils'
 
 export default function StickyHeader() {

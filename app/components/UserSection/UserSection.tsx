@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import styles from './UserSection.module.scss'
 import { User } from '@/typings'
-import Avatar from '@/components/Avatar/Avatar'
+import { Avatar } from '@/components'
 
 export default function UserSection({ user }: { user: User }) {
 	const { username, displayName } = user

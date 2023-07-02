@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './SideNav.module.scss'
-import SideNavItem from '@/components/SideNavItem/SideNavItem'
+import { SideNavItem } from '@/components'
 
 export default function SideNav() {
 	return (

@@ -1,6 +1,6 @@
 import { Task } from '@/typings'
 import styles from './TaskListItem.module.scss'
-import Avatar from '@/components/Avatar/Avatar'
+import { Avatar } from '@/components'
 import Image from 'next/image'
 
 export default function TaskListItem({ task }: { task: Task }) {

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import styles from './SearchBar.module.scss'
-import InputField from '@/components/InputField/InputField'
+import { InputField } from '@/components'
 
 export default function SearchBar() {
 	const [value, setValue] = useState('')

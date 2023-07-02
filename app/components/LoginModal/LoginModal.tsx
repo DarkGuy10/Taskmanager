@@ -1,7 +1,6 @@
 'use client'
 
-import Button from '@/components/Button/Button'
-import InputField from '@/components/InputField/InputField'
+import { InputField, Button } from '@/components'
 import styles from './LoginModal.module.scss'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import Image from 'next/image'
