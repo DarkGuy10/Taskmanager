@@ -1,4 +1,4 @@
-import LoginModal from '@/components/LoginModal/LoginModal'
+import { LoginModal } from '@/components'
 
 export const metadata = {
 	title: 'Taskmanager | Login',
